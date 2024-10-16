@@ -1,11 +1,4 @@
 /* Global Styles */
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --text-color: #333;
-    --background-color: #f4f4f4;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +8,11 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: #333;
+    background-color: #f4f4f4;
     background-image: radial-gradient(rgba(255,0,255,0.3), rgba(0,0,255,0.3)), url(/img/wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 a {
@@ -34,7 +26,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color:transparent;
+    background-color: transparent;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -57,10 +49,16 @@ a {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover, .nav-links a.active {
-    color: var(--primary-color);
+.nav-links a.active {
+    color: white;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 10px;
 }
 
+.nav-links a:hover {
+    transform-style: flat;
+}
 /* Main Content Styles */
 .speakers-section {
     max-width: 1200px;
@@ -98,13 +96,12 @@ a {
 .speaker img {
     width: 100%;
     height: 250px;
-    
 }
 
 .speaker h2 {
     padding: 1rem;
     font-size: 1.2rem;
-    color: rb
+    color: rb;
 }
 
 .speaker .description {
@@ -169,7 +166,7 @@ footer {
     background-color: red;
     color: #fff;
     border: none;
-    border-radius:  50px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

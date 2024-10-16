@@ -6,10 +6,13 @@
 }
 
 body {
+    display: block;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+}
+.fst-section {
     background-image: radial-gradient(circle at 0% 0%, rgba(255,0,255,90%), rgba(0,0,255,70%)), url(/img/wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,7 +53,10 @@ a {
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: #3498db;
+    color: white;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 10px;
 }
 
 /* Main Content Styles */
@@ -93,16 +99,63 @@ a {
 }
 #button_learn {
     background-color: transparent;
-    border-style: solid;
-    border: white;
-    border-color: rgb(255, 0, 0);
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
 }
 
 .buttons button:hover {
     background-color: #2980b9;
 }
 
-/* Footer Styles */
+/* filter div */
+.filter {
+    max-width: 1200px;
+    margin-top: 5cm;
+    margin-left: 5cm;
+    background-color: rgb(23, 0, 106);
+    border-radius: 8px;
+    font-size: smaller;
+    font-weight: normal;
+    color: rgb(193, 193, 193);
+}
+form {
+    display: flex;
+    justify-content: space-around;
+}
+form div{
+    font-size: smaller;
+    display: block;
+}
+
+form div input,label, select  {
+    width: 200px;
+
+}
+
+.filter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filter input[type="text"], .filter select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.filter input[type="text"]:focus, .filter select:focus {
+    outline: none;
+}
+
+
+    
+
+/* ----------------------------------- */
 /* Footer Styles */
 footer {
     background-color: rgb(23, 0, 106);
