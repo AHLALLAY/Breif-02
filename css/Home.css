@@ -151,8 +151,11 @@ form div input,label, select  {
 .filter input[type="text"]:focus, .filter select:focus {
     outline: none;
 }
-
-
+.scd-section {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+}
     
 
 /* ----------------------------------- */
