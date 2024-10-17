@@ -160,10 +160,7 @@ form div input,label, select  {
 .enete {
     display: flex;
 }
-.titl{
-    text-align: center;
-    font-weight: bolder;
-}
+
 .liste {
     display: flex;
     justify-content: flex-end;
@@ -175,10 +172,15 @@ form div input,label, select  {
 }
 .liste select{
     padding-left: 2cm;
+    margin-right: 0.5cm;
     border-radius: 50px;
     border: none;
     background-color: rgba(128, 128, 128, 0.25);
-    height: 120%;
+    height: 1cm
+}
+.titl{
+    text-align: start;
+    font-weight: bolder;
 }
 .bady{
     display: flex;
@@ -190,14 +192,17 @@ form div input,label, select  {
     align-items: center;
 }
 .concert{
-    width: 10cm;
-    height: 10cm;
     width: 344px;
-    height: 340px;
+    height: 390px;
     border-radius: 18px;
     box-shadow: 0 0 0.5cm;
+    
 }
 
+.concert h2{
+    font-size: large;
+    font-weight: 18pt;
+}
 .load {
     font-weight: bold;
     border: 2px solid rgb(50, 100, 255);
@@ -216,6 +221,8 @@ form div input,label, select  {
 .trd-section{
     display: block;
     position: absolute;
+    align-items: center;
+    margin-left: 3cm;
 }
 .brands {
     display: flex;
@@ -230,12 +237,94 @@ form div input,label, select  {
 }
 .articles{
     display: flex;
-    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .articles > div >img{
     width: 400px;
     height: 400px;
 }
+.articles >div > h2 {
+    font-weight: bold;
+    font-size: medium;
+}
+.articles >div > p {
+    font-weight: lighter;
+    font-size: medium;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(23, 0, 106);
+    color: #fff;
+    padding: 3rem 5%;
+}
+
+.footer-content {
+    margin-top: 10cm;
+    display: flex;
+}
+
+.footer-about, .footer-links, .footer-newsletter {
+    margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-links h3, .footer-newsletter h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex-grow: 1;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #2980b9;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
