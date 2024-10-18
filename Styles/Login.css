@@ -1,0 +1,317 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, border 0.3s ease;
+    padding: 10px;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+}
+
+/* Login Container Styles */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 0% 0%, rgba(255,0,255,0.7), rgba(0,0,255,0.6)), url(/Images/wallpaper-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 5%;
+}
+
+.login-image {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 2rem;
+}
+
+.login-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.login-form {
+    flex: 1;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+.form-group input::placeholder {
+    color: rgba(86, 86, 86, 0.9);
+}
+
+.buttons {
+    display: flex;
+    width: 20vw;
+}
+
+.btn-login, .btn-account {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-bottom: 1rem;
+}
+
+.btn-login {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #cc0000;
+}
+
+.btn-account {
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-account:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-login:active, .btn-account:active {
+    transform: scale(0.98);
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(23, 0, 106);
+    color: #fff;
+    padding: 3rem 5%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-about, .footer-links, .footer-newsletter {
+    margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff0000;
+}
+
+.footer-links h3, .footer-newsletter h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff0000;
+}
+
+.newsletter-form {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.newsletter-form .input-group {
+    position: relative;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem 110px 0.75rem 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.newsletter-form button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+    background-color: #cc0000;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-image {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .login-form {
+        max-width: 100%;
+    }
+
+    .nav-links {
+        display: none; /* Consider adding a mobile menu for smaller screens */
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form input[type="email"] {
+        padding-right: 100px;
+    }
+    
+    .newsletter-form button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}

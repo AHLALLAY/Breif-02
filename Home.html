@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Eventick</title>
-    <link rel="stylesheet" href="/css/Home.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="Logo d'Eventick">
-            </a>
-            <ul class="nav-links">
-                <li><a href="Home.html" class="active">Accueil</a></li>
-                <li><a href="Speakers.html">Intervenant</a></li>
-                <li><a href="About.html">À propos</a></li>
-                <li><a href="login.html">Connexion</a></li>
-            </ul>
-        </nav>
-    </header>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Eventick</title>
+        <link rel="stylesheet" href="/Styles/Home.css">
+    </head>
+    <body>
+        <section class="fst-section">    
+            <header>
+                <nav class="navbar">
+                    <a href="Home.html" class="logo">
+                        <img src="Images/logo.png" alt="Logo d'Eventick">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="Home.html" class="active">Home</a></li>
+                        <li><a href="Speakers.html">Speakers</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-    <main>
-        <section class="fst-section">
-            <div class="photo">
-                <img src="/img/image.png" alt="Image d'un événement">
-            </div>
-            <div class="text-buttons">
-                <div class="text">
-                    <h2>SBS MTV The Kpop<br>Show Ticket Package</h2>
-                    <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording.</p>
-                    <div class="buttons">
-                        <button id="button_get">Get Ticket</button>
-                        <button id="button_learn">Learn More</button>
+            <div class="home">
+                <div class="photo">
+                    <img src="/Images/image.png" alt="Image d'un événement">
+                </div>
+                <div class="text-buttons">
+                    <div class="text">
+                        <h2>SBS MTV The Kpop<br>Show Ticket Package</h2>
+                        <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording.</p>
+                        <div class="buttons">
+                            <button id="button_get">Get Ticket</button>
+                            <button id="button_learn">Learn More</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
         <div class="filter">
             <form action="#" method="post">
                 <div>
@@ -63,12 +63,11 @@
                 </div>
             </form>
         </div>
-
         <section class="scd-section">
             <div>
                 <div class="liste">
-                    <h1 class="titl">Événements à venir</h1>
-                    <div>
+                    <h1>Événements à venir</h1>
+                    <div class="selections">
                         <select class="weekdays">
                             <option value="Any time">Any time</option>
                             <option value="Lundi">Lundi</option>
@@ -79,13 +78,9 @@
                             <option value="Samedi">Samedi</option>
                             <option value="Dimanche">Dimanche</option>
                         </select>
-                    </div>
-                    <div>
                         <select class="event-type">
                             <option value="Event type">Any type</option>
                         </select>
-                    </div>
-                    <div>
                         <select class="categories">
                             <option value="Any Category">Any Category</option>
                         </select>
@@ -93,44 +88,41 @@
                 </div>
             </div>
             <div class="bady">
-                <div class="concert">
-                    <img src="/img/Rectangle 12.png" alt="Event_1">
-                    <h2>Wonder Girls 2010 World Tour San Francisco</h2>
-                    <p class="description">We’ll get you directly seated and inside for you to enjoy the show.</p>
+                <div class="event-card">
+                    <img src="/Images/event-1.png" alt="Event_1">
+                    <h3>Wonder Girls 2010 World Tour San Francisco</h3>
+                    <p>We’ll get you directly seated and inside for you to enjoy the show.</p>
                 </div>
-                <div class="concert">
-                    <img src="img/Rectangle 12-1.png" alt="Event_2">
-                    <h2>JYJ 2011 Worldwide Concert Barcelona</h2>
-                    <p class="description">Directly seated and inside for you to enjoy the show.</p>
+                <div class="event-card">
+                    <img src="/Images/event-2.png" alt="Event_2">
+                    <h3>JYJ 2011 Worldwide Concert Barcelona</h3>
+                    <p>Directly seated and inside for you to enjoy the show.</p>
                 </div>
-                <div class="concert">
-                    <img src="img/Rectangle 12-2.png" alt="Event_Super Junior 2011">
-                    <h2>Super Junior SM Town Live '10 World Tour New York City</h2>
-                    <p class="description">Directly seated and inside for you to enjoy the show.</p>
+                <div class="event-card">
+                    <img src="/Images/event-3.png" alt="Event_3">
+                    <h3>Super Junior SM Town Live '10 World Tour New York City</h3>
+                    <p>Directly seated and inside for you to enjoy the show.</p>
                 </div>
-                <div class="concert">
-                    <img src="img/Rectangle 12-3.png" alt="Event_Wonder Girls 2010">
-                    <h2>Wonder Girls 2010 World Tour San Francisco</h2>
-                    <p class="description">We’ll get you directly seated and inside for you to enjoy the show.</p>
+                <div class="event-card">
+                    <img src="/Images/event-4.png" alt="Event_4">
+                    <h3>Wonder Girls 2010 World Tour San Francisco</h3>
+                    <p>We’ll get you directly seated and inside for you to enjoy the show.</p>
                 </div>
-                <div class="concert">
-                    <img src="img/Rectangle 12-4.png" alt="Event_JYJ 2011">
-                    <h2>JYJ 2011 Worldwide Concert Barcelona</h2>
-                    <p class="description">Directly seated and inside for you to enjoy the show.</p>
+                <div class="event-card">
+                    <img src="/Images/event-5.png" alt="Event_5">
+                    <h3>JYJ 2011 Worldwide Concert Barcelona</h3>
+                    <p>Directly seated and inside for you to enjoy the show.</p>
                 </div>
-                <div class="concert">
-                    <img src="img/Rectangle 12-5.png" alt="Event_Super J">
-                    <h2>Super Junior SM Town Live '10 World Tour New York City</h2>
-                    <p class="description">Directly seated and inside for you to enjoy the show.</p>
+                <div class="event-card">
+                    <img src="/Images/event-6.png" alt="Event_6">
+                    <h3>Super Junior SM Town Live '10 World Tour New York City</h3>
+                    <p>Directly seated and inside for you to enjoy the show.</p>
                 </div>
             </div>
-            <div class="foot">
-                <div class="load-container">
-                    <button class="load">Load More</button>
-                </div>
-            </div>            
+            <div class="load-container">
+                <button class="load">Load More</button>
+            </div>
         </section>
-
         <div class="supp">
             <h1>Rejoignez ces marques</h1>
             <p>We've had the pleasure of working with industry-defining brands. These<br>are just some of them.</p>
@@ -138,11 +130,11 @@
 
         <section class="trd-section">
             <div class="brands">
-                <img src="img/brands (1).png" alt="Marque 1">
-                <img src="img/brands (2).png" alt="Marque 2">
-                <img src="img/brands (3).png" alt="Marque 3">
-                <img src="img/brands (4).png" alt="Marque 4">
-                <img src="img/brands (5).png" alt="Marque 5">
+                <img src="/Images/brands (1).png" alt="Marque 1">
+                <img src="/Images/brands (2).png" alt="Marque 2">
+                <img src="/Images/brands (3).png" alt="Marque 3">
+                <img src="/Images/brands (4).png" alt="Marque 4">
+                <img src="/Images/brands (5).png" alt="Marque 5">
             </div>
             <div class="trd-section-head">
                 <h1>Blog</h1>
@@ -150,68 +142,68 @@
             </div>
             <div class="articles">
                 <div>
-                    <img src="img/image (1).jpg" alt="Image article 1">
-                    <h2>6 Strategies to Find Your Conference Keynote and Other Speakers</h2>
-                    <p class="description">12 Mar - John Doe</p>
+                    <img src="/Images/image (1).jpg" alt="Image article 1">
+                    <h3>6 Strategies to Find Your Conference Keynote and Other Speakers</h3>
+                    <p>12 Mar - John Doe</p>
                 </div>
                 <div>
-                    <img src="img/image (2).jpg" alt="Image article 2">
-                    <h2>How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</h2>
-                    <p class="description">12 Mar - John Doe</p>
+                    <img src="/Images/image (2).jpg" alt="Image article 2">
+                    <h3>How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</h3>
+                    <p>12 Mar - John Doe</p>
                 </div>
                 <div>
-                    <img src="img/image (3).jpg" alt="Image article 3">
-                    <h2>Introducing Workspaces: Work smarter, not harder with new navigation</h2>
-                    <p class="description">12 Mar - John Doe</p>
+                    <img src="/Images/image (3).jpg" alt="Image article 3">
+                    <h3>Introducing Workspaces: Work smarter, not harder with new navigation</h3>
+                    <p>12 Mar - John Doe</p>
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-about">
-                <img src="img/logo.png" alt="Logo d'Eventick" class="footer-logo">
-                <p>Eventick est une plateforme mondiale de billetterie en libre-service pour des expériences live, permettant à chacun de créer, partager, trouver et assister à des événements qui alimentent leurs passions.</p>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="Images/logo.png" alt="Eventick Logo" class="footer-logo">
+                    <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="Images/icon1.png" alt="Facebook"></a>
+                        <a href="#" aria-label="Twitter"><img src="Images/icon2.png" alt="Twitter"></a>
+                        <a href="#" aria-label="LinkedIn"><img src="Images/icon3.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Plan Events</h3>
+                    <ul>
+                        <li><a href="#">Create and Set Up</a></li>
+                        <li><a href="#">Sell Tickets</a></li>
+                        <li><a href="#">Online RSVP</a></li>
+                        <li><a href="#">Online Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Eventick</h3>
+                    <ul>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Informed</h3>
+                    <p>Join our mailing list to stay in the loop with our newest for event and concert.</p>
+                    <form action="#" method="post" class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address..." required>
+                            <button type="submit">Subscribe now</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="footer-links">
-                <h3>Planifiez des événements</h3>
-                <ul>
-                    <li><a href="#">Créer et configurer</a></li>
-                    <li><a href="#">Vendre des billets</a></li>
-                    <li><a href="#">RSVP en ligne</a></li>
-                    <li><a href="#">Événements en ligne</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2022 Avi Yansah</p>
             </div>
-            <div class="footer-links">
-                <h3>Eventick</h3>
-                <ul>
-                    <li><a href="About.html">À propos de nous</a></li>
-                    <li><a href="#">Presse</a></li>
-                    <li><a href="#">Contactez-nous</a></li>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Comment ça marche</a></li>
-                    <li><a href="#">Confidentialité</a></li>
-                    <li><a href="#">Conditions</a></li>
-                </ul>
-            </div>
-            <div class="footer-newsletter">
-                <h3>Restez informé</h3>
-                <p>Rejoignez notre liste de diffusion pour rester au courant de nos événements et concerts les plus récents.</p>
-                <form action="#" method="post" class="newsletter-form">
-                    <input type="email" placeholder="Entrez votre adresse e-mail ..." required>
-                    <button type="submit">Abonnez-vous maintenant</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Eventick. Tous droits réservés.</p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
