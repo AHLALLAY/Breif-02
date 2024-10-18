@@ -21,6 +21,14 @@ a {
 }
 
 /* Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -80,6 +88,7 @@ a {
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
+    width: 40vh;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
