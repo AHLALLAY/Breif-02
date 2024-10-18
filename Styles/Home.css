@@ -53,8 +53,7 @@ header {
     transition: color 0.3s ease;
     padding: 10px;
 }
-
-.nav-links a:hover, 
+ 
 .nav-links a.active {
     color: white;
     border: 2px solid;
